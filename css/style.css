@@ -1,0 +1,57 @@
+#main {
+    display: flex;
+    flex-wrap: nowrap;
+    height: -webkit-fill-available;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.imgs {
+    overflow: scroll;
+    flex: 1;
+}
+
+p {
+    color: white !important;
+    padding-top: 15px !important;
+    font-weight: bold !important;
+    font-size: 1.5em !important;
+    margin-bottom: 1rem !important;
+}
+
+img {padding-bottom:25px; padding-top: 15px;}
+img:last-of-type{margin-bottom:50px}
+
+
+
+.TypeBrand {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    text-align:center;
+}
+.d-flex a {
+    margin: 0 auto;
+}
+
+.navbar-nav {
+    margin-right: 27% !important;
+}
+#sidebar {
+    margin:0 auto;
+}
+li{list-style: none; padding: 0; margin: 0;display:inline-block;}
+ul{list-style: none; padding: 0; margin: 0;}
+a {text-decoration: none !important;color:White !important;}
+
+.center {
+    text-align: center;
+}
+
+.bg-darkx{
+    background-color:#2d333a;
+}
+
+.imgs-conf img {
+    width:1024px !important;
+}

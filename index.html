@@ -1,0 +1,125 @@
+<html>
+    <title>EZ Config Tool</title>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+
+</head>
+          <script>
+         function DisplayAlert() {
+            var newLine = "\r\n"
+            var msg = "متهربش و افتح الويكي"
+            msg += newLine;
+            msg += "اي حاجة بتعملها هنا او هتشوفها هنا علي مسؤليتك برضة";
+            msg += newLine;
+            msg += "الريفرنس الوحيد هو الويكي و دي تول مساعده بس";
+            msg+= newLine;
+            msg += "و فريف قبل ما تغير حاجة من عندك";
+            alert(msg);
+         }
+      </script>
+      <body onload="DisplayAlert()">
+        <div></div>
+
+    <body>
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">EZC_Tool</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <div class="collapse navbar-collapse" id="">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                </ul>
+
+                <p>Be <span style="color:blueviolet">WE</span>, Stay <span style="color:blueviolet">WE</span></p>
+                <form style="margin-left: auto !important; margin-top: auto !important;">
+                  <input id ="myInput" class="form-control" type="text" placeholder="Search" aria-label="Search">
+                </form>
+              </div>
+            </div>
+          </nav>
+<div id="main">
+          <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 90px;">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <div class="TypeBrand">
+              <span class="fs-4">EZ-Con</span>
+              <span class="fs-4">TOOL</span>
+            </div>
+            </a>
+            <hr>
+        <div id="sidebar" class="d-flex align-items-start">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button class="nav-link text-white active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="bi bi-gear-fill"></i></button>
+              <button class="nav-link text-white" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="bi bi-wifi"></i></button>
+              <button class="nav-link text-white" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"></button>
+              <button class="nav-link text-white" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false"></button>
+            </div>
+          </div>
+          </div>
+          <div class="imgs tab-content" id="v-pills-tabContent" style="overflow-y: auto; width:5111px;background-color:#2d333a;">
+            <div class="" id="Home" role="tabpanel" aria-labelledby="v-pills-home-tab"style="height:90%;">
+              <ul id="myUL" class="myUL" style="list-style: none;">
+                <li class="btn btn-outline-primary btn-sm mr-2 mb-2"><a href="./Routers/vr300.html">VR300</a></li>
+                <li class="btn btn-outline-primary btn-sm mr-2 mb-2"><a href="./Routers/h168n.html">H168N</a></li>
+                <li class="btn btn-outline-primary btn-sm mr-2 mb-2"><a href="./Routers/vr300.html">DG80-45</a></li>
+                <li class="btn btn-outline-primary btn-sm mr-2 mb-2"><a href="./Routers/h168n.html">DN8245v-56</a></li>
+                <li class="btn btn-outline-primary btn-sm mr-2 mb-2"><a href="./Routers/vr300.html">HG633</a></li>
+                <li class="btn btn-outline-primary btn-sm mr-2 mb-2"><a href="./Routers/h168n.html">H188A</a></li>
+                <li class="btn btn-outline-primary btn-sm mr-2 mb-2"><a href="./Routers/HG630 V2.html">HG630-V2</a></li>
+              </ul>
+
+            </div>
+            <div class="imgs-conf tab-pane fade active show" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"></div>
+            <div class="center footer">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                About Me
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">About Me</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer" style="margin:0 auto;">
+                      <a class="btn btn-primary" target='_blank' href="https://twitter.com/_Black_Me_"><i class="bi bi-github"></i></a>
+                      <a class="btn btn-primary" target='_blank' href="https://www.facebook.com/abdoo.sorcerer"><i class="bi bi-facebook"></i></a>
+                      <a class="btn btn-primary" target='_blank' href="https://www.linkedin.com/in/abdalrahmangamal/"><i class="bi bi-linkedin"></i></a>
+                      <a class="btn btn-primary" target='_blank' href="https://github.com/iwillsolo"><i class="bi bi-twitter"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             </div>
+    
+          </div>
+          </div>
+         <!-- Button trigger modal -->
+        
+    </body>
+ 
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/popper.min.js"></script>
+</html>
