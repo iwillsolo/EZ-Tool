@@ -1,0 +1,118 @@
+<html>
+    <title>EZ Config Tool</title>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <script src="../js/jquery-3.5.1.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/bootstrap.esm.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="../css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap-reboot.css">
+
+    <script type="text/javascript">
+      (function(f,b){if(!b.__SV){var e,g,i,h;window.mixpanel=b;b._i=[];b.init=function(e,f,c){function g(a,d){var b=d.split(".");2==b.length&&(a=a[b[0]],d=b[1]);a[d]=function(){a.push([d].concat(Array.prototype.slice.call(arguments,0)))}}var a=b;"undefined"!==typeof c?a=b[c]=[]:c="mixpanel";a.people=a.people||[];a.toString=function(a){var d="mixpanel";"mixpanel"!==c&&(d+="."+c);a||(d+=" (stub)");return d};a.people.toString=function(){return a.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+      for(h=0;h<i.length;h++)g(a,i[h]);var j="set set_once union unset remove delete".split(" ");a.get_group=function(){function b(c){d[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));a.push([e,call2])}}for(var d={},e=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<j.length;c++)b(j[c]);return d};b._i.push([e,f,c])};b.__SV=1.2;e=f.createElement("script");e.type="text/javascript";e.async=!0;e.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+      MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";g=f.getElementsByTagName("script")[0];g.parentNode.insertBefore(e,g)}})(document,window.mixpanel||[]);
+      
+      // Enabling the debug mode flag is useful during implementation,
+      // but it's recommended you remove it for production
+      mixpanel.init('7085f5b7dffd442541be6c156fde2fcd', {debug: true}); 
+      mixpanel.track('Sign up');
+      </script>
+
+</head>
+    <body>
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">EZC_Tool</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <div class="collapse navbar-collapse" id="">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Ignore Me I will be useful later</a>
+                  </li>
+                </ul>
+                <form>
+                  <input id ="myInput" onkeyup="myFunction(this.value)" class="form-control" type="text" placeholder="Search" aria-label="Search">
+                </form>
+              </div>
+            </div>
+          </nav>
+<div id="main">
+          <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+            <a href="../index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <div class="TypeBrand">
+              <span class="fs-4">WE/Huawei</span>
+              <span class="fs-4">HG630-v2</span>
+            </div>
+            </a>
+            <hr>
+
+        <div id="sidebar" class="d-flex align-items-start">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button class="nav-link text-white active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="bi bi-gear-fill"></i> Configurations</button>
+              <button class="nav-link text-white" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="bi bi-wifi"></i> Wifi Settings</button>
+              <button class="nav-link text-white" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="bi bi-hdd-network-fill"></i> Connected Devices</button>
+              <button class="nav-link text-white" id="v-pills-mac-tab" data-bs-toggle="pill" data-bs-target="#v-pills-mac" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="bi bi-funnel-fill"></i> Mac Filtering</button>
+              <button class="nav-link text-white" id="v-pills-admin-tab" data-bs-toggle="pill" data-bs-target="#v-pills-admin" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="bi bi-key-fill"></i> Admin Panel</button>
+            </div>
+          </div>
+          </div>
+          <div class="imgs tab-content" id="v-pills-tabContent">
+            <div class="bg-darkx center imgs-conf tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" style="padding-bottom:2px;">
+              <img src="../img/H188A/Conf/1.png" alt="">
+              <img src="../img/H188A/Conf/2.jpg" alt="">
+              <img src="../img/H188A/Conf/3.png" alt="">
+              <img src="../img/H188A/Conf/4.png" alt="">
+              <img src="../img/H188A/Conf/5.jpg" alt="">
+            </div>
+            <div class="bg-darkx center imgs-conf tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                <p>Wifi Settings 2.4GHZ</p>
+                <img src="../img/H188A/Wifi/1.png" alt="">
+                <p>Wifi Settings 5GHZ</p>
+                <img src="../img/H188A/Wifi/2.png" alt="">
+                <p>WPS</p>
+                <img src="../img/H188A/Wifi/3.png" alt="">
+            </div>
+
+            <div class="bg-darkx center imgs-conf tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                <img src="../img/H188A/Devices/1.png" alt="">
+                <img src="../img/H188A/Devices/2.png" alt="">
+                <img src="../img/H188A/Devices/3.png" alt="">
+
+            </div>
+            <div class="bg-darkx center tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+            <div class="bg-darkx center tab-pane imgs-conf center bg-darkx fade" id="v-pills-mac" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                <p>Black / White Mac Filtering</p>
+                <p dir=rtl> ع السريع كده البلاك ليست هيخلي الاجهزة اللي هنحطها دي متدخلش علي الشبكة و اي جهازة غيرهم هيشتغل عادي</p>
+                <p dir=rtl>الوايت ليست بقي هيخلي الاجهزة اللي هنحطها تدخل علي الشبكة و اي جهازة تاني مش هيقدر يدخل</p>
+                <img src="../img/H188A/Filter/1.png" alt="">
+                <img src="../img/H188A/Filter/2.png" alt="">
+
+            </div>
+
+            <div class="tab-pane imgs-conf center bg-darkx fade" id="v-pills-admin" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+              <p>Change admin page / login page password</p>
+              <img src="../img/H188A/Admin/1.png" alt="">
+            </div>
+
+          </div>
+    
+          </div>
+
+
+
+    </body>
+</html>
