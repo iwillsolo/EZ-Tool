@@ -25,19 +25,10 @@
       <script type="text/javascript">
         var alerted = localStorage.getItem('alerted') || '';
         if (alerted != 'yes') {
-          function DisplayAlert() {
-            var newLine = "\r\n"
-            var msg = "متهربش و افتح الويكي"
-            msg += newLine;
-            msg += "اي حاجة بتعملها هنا او هتشوفها هنا علي مسؤليتك برضة";
-            msg += newLine;
-            msg += "الريفرنس الوحيد هو الويكي و دي تول مساعده بس";
-            msg+= newLine;
-            msg += "و فريف قبل ما تغير حاجة من عندك";
-            alert(msg);
+            alert("اي حاجة بتعملها هنا علي مسؤليتك ارجع برضة للريفرنس بتاعك");
          }
          localStorage.setItem('alerted','yes');
-        }
+        
     </script>
       <body onload="DisplayAlert()">
         <div></div>
